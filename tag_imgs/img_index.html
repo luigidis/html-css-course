@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tags imgs</title>
+  </head>
+  <body>
+    <!-- Nel vostro progetto avremo una cartella imgs o assets/imgs 
+            dove andrete a inserire tutte le immagini e i file che servono per 
+            comporre il vostro sito -->
+
+    <!-- Immagini da unspalsh siti esterni (normalmete non si fa, consumate la banda di un altro sito non è corretto)-->
+
+    <img
+      src="https://images.unsplash.com/photo-1745131068087-56f5ec5fa498?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      alt="Balcone"
+      
+    />
+
+    <img
+      src="https://images.unsplash.com/photo-1763979366987-a48e62e25113?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      alt="Alghe verdi"
+      height="800"
+      width="900"
+    />
+
+    <!-- Immagini messa presente all'interno del nostro progetto -->
+    <img
+      src="./assets/grafico.png"
+      alt="Balcone"
+      width="200"
+      height="300"
+    />
+
+    <!-- Più dettagliato, utilizzato quando stiamo creando un sito resposinve e ci interessa la visione del nostro sito
+        su più dispositivi -->
+    <img
+      src="./assets/small.jpg"
+      srcset="small.jpg 480w, medium.jpg 800w, large.jpg 1200w"
+      sizes="(max-width: 480px) 100vw, (max-width: 800px) 50 vw, 25vw"
+      alt="Balcone"
+      width="200"
+      height="300"
+    />
+
+    <!-- src sarà la nostra "fallback" utilizzata dai browser e/o dispositivi che non supportano il tag srcset-->
+    <!-- il tag srcset mi dice prenditi il file x.jpg se hai uno schermo di 480w oppure il tag y.jpg se hai uno
+        schermo 800 width e così via -->
+    <!-- sizes mi specifica quanto deve essere grande l'immagine in base alla grandezza dello schermo 
+        nell'esempio per gli schermi con width 480px in giù occupa 100% della view width (cioè il 100% della larghezza dello schermo)
+        per schermi compresi tra 480px e 800px mi occupi il 50% cioè la metà della view width (cioè il 50% della larghezza dello schermo)
+        per tutto gli altri maggiori di 800px fai occupre all'immagine il 25% della larghezza dello schermo -->
+    <!-- è un meccanismo abbastanza rognoso, normalmente c'è una persona sola che si occupa delle immagini e le fornisce allo sviluppatore per poter avere il sito
+    accessibili nel migliore dei modi -->
+
+    <!-- Il tag picture serve ai browser e dispositivi più datati per leggere immagini che estensione che non sono supportate
+     ad esempio avif  e webp -->
+    <picture>
+      <source srcset="image.webp" type="image/webp" />
+      <source srcset="image.avif" type="image/avif" />
+      <img src="image.jpg" alt="Fallback" />
+    </picture>
+    <br>
+    <br>
+    <!-- Tutto questo richiede un lavoro alla base abbastanza grande, che nella maggior parte dei casi non viene fatto in modo così dettagliato
+     queste "piccolezze" riguardanti le immagini è giusto sapere ma probabilmente voi non le utilizzerete quasi mai 
+     o soltanto nei casi in cui la situazione lo richiede specificatamente -->
+    <!-- Tutti questi supporti per i dispostivi più datati nascono dal fatto che HTML 5 (quello che studiamo noi) nasce
+     in un periodo in cui sta avvenendo la transizione tra PC e Mobile, quindi all'inizio di tutto era necessario avere questi strumenti
+     per poter bypassare il sistema nel caso di incompatibilità tra le piattaforme e il codice però adesso vengono sempre meno utilizzati -->
+    <figure>
+      <img src="./assets/grafico.png" alt="Grafico Vendite 2024" />
+      <hr />
+      <figcaption>Grafico delle vendite anno 2024</figcaption>
+      <img id="ciao" class="cente" src="" alt="">
+      <img id="ciao" class="" src="" alt="">
+
+    </figure>
+  </body>
+</html>
