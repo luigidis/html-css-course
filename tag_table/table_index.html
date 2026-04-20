@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table Tag</title>
+  </head>
+  <body>
+    <table border="1" cellpadding="30" cellspacing="1">
+      <!-- Caption non è obbligatoria -->
+      <caption>
+        Vendite Trimestrati 2025
+      </caption>
+      <!-- Testa della nostra tabella -->
+      <thead>
+        <tr>
+          <th>Trimestre</th>
+          <th>Prodotto A</th>
+          <th>Prodotto B</th>
+          <th>Totale</th>
+        </tr>
+      </thead>
+      <!-- Contenuto (body) della nostra tabella -->
+      <tbody>
+        <tr>
+          <td>Q1</td>
+          <td>15000</td>
+          <td>20000</td>
+          <td>35000</td>
+        </tr>
+        <tr>
+          <td>Q1</td>
+          <td>15000</td>
+          <td>20000</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Q2</td>
+          <td>15000</td>
+          <td>20000</td>
+          <td>35000</td>
+        </tr>
+        <tr>
+          <td>Q3</td>
+          <td>15000</td>
+          <td>20000</td>
+          <td>35000</td>
+        </tr>
+        <tr>
+          <td>Q4</td>
+          <td>15000</td>
+          <td>20000</td>
+          <td>35000</td>
+        </tr>
+      </tbody>
+      <!-- Footer della nostra tabella -->
+      <tfoot>
+        <tr>
+          <td>Totale</td>
+          <td>60000</td>
+          <td>80000</td>
+          <td>140000</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <br />
+
+    <!-- Colspan: l'attributo colspan ci permette 
+     di dire alla nostra cella (th o td) di prendersi lo spazio di due o più celle in orizzontale -->
+    <table bordercolor="red" border="1" cellpadding="10" cellSpacing="1">
+      <!--Prima riga -->
+      <tr>
+        <th colspan="3">Informazioni Personali</th>
+      </tr>
+      <!-- Seconda riga -->
+      <tr>
+        <th>Nome</th>
+        <th>Cognome</th>
+        <th>Email</th>
+      </tr>
+      <tr>
+        <td>Mario</td>
+        <td>Rossi</td>
+        <td>mario.rossi@email.com</td>
+      </tr>
+    </table>
+
+    <br>
+
+    <!-- RowSpan: l'attributo rowspan ci permette invece di dire alla nostra th o td 
+     di prendersi lo spazio di due o più celle in verticale-->
+    <table border="1" cellspacing="0" cellpadding="10">
+      <thead>
+        <th>Categoria</th>
+        <th>Prodotto</th>
+        <th>Prezzo</th>
+      </thead>
+      <tr>
+        <td rowspan="2">Elettronica</td>
+        <td>Smartphone</td>
+        <td>€699</td>
+      </tr>
+      <tr>
+        <td>Tablet</td>
+        <td>399€</td>
+      </tr>
+      <tr>
+        <td rowspan="2">Abbigliamento</td>
+        <td>T-Shirt</td>
+        <td>€25</td>
+      </tr>
+      <tr>
+        <td>Jeans</td>
+        <td>89€</td>
+      </tr>
+    </table>
+  </body>
+</html>
