@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tag Audio e Video</title>
+  </head>
+  <body>
+    <h1>TAG Audio e Video</h1>
+    <!-- Tag audio 
+     controls --- mette i controlli su schermo 
+     autoplay --- fa partire in automatico la riproduzione al caricamento della pagina
+     muted --- il volume inizia da 0
+     loop --- dopo aver fatto play la riproduzione riparte dall'inizio continuamente
+     preload --- vi permette di caricare in anticipo dati riguardanti l'audio inserito
+     -->
+    <audio controls autoplay loop preload="metadata">
+      <source
+        src="./assets/audio/macciuzza_chi_succiriu.m4a"
+        type="audio/mp4"
+      />
+      <!-- Testo di fallback -->
+      Il tuo browser non supporta l'audio html5
+    </audio>
+
+
+    <!-- Tag video 
+     controls --- mette i controlli su schermo 
+     autoplay --- fa partire in automatico la riproduzione al caricamento della pagina
+     muted --- il volume inizia da 0
+     loop --- dopo aver fatto play la riproduzione riparte dall'inizio continuamente
+     poster --  la copertina del vostro video prima di iniziare
+     -->
+    <video controls autoplay loop muted width="640" height="360" poster="./assets/video/Diablo-IV-art.webp">
+      <source src="./assets/video/fun_and_interactive.mp4" type="video/mp4" />
+      <!-- Testo di fallback -->
+      Il tuo browser non supporta i video html5
+
+      <track
+        kind="subtitles"
+        src="./assets/subtitles/subtitle-eng.vtt"
+        srclang="en"
+        label="English">
+
+      <track
+        kind="subtitles"
+        src="subtitle-it.vtt"
+        srclang="it"
+        label="Italian">
+    </video>
+  </body>
+</html>
