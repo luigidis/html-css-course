@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag Semantici HTML5</title>
+</head>
+<body>
+    <!-- Start -->
+    <header>
+        <nav>
+            <ul>
+                <li>Tutte</li>
+                <li>Amazon Haul</li>
+                <li>Link navbar 3</li>
+            </ul>
+        </nav>
+
+    </header>
+    <!-- ============================================================
+         <header>
+         Rappresenta l'intestazione della pagina o di una sezione.
+         Di solito contiene il logo, il titolo del sito e il menu
+         di navigazione principale. Può comparire più volte nella
+         pagina (es. intestazione di un <article>).
+    ============================================================ -->
+    <header>
+        <h1>Il mio sito web</h1>
+        <p>Benvenuto nella home page</p>
+    </header>
+
+
+    <!-- ============================================================
+         <nav>
+         Contiene i link di navigazione principali del sito.
+         Serve per spostarsi tra le diverse sezioni o pagine.
+         Non tutti i gruppi di link devono stare in un <nav>:
+         solo quelli che rappresentano la navigazione principale.
+    ============================================================ -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Chi siamo</a>
+        <a href="#">Contatti</a>
+    </nav>
+
+
+    <!-- ============================================================
+         <main>
+         Contiene il contenuto principale e unico della pagina.
+         NON deve includere elementi ripetuti come header, footer
+         o barre laterali. Deve essere usato UNA SOLA VOLTA
+         per pagina e non va annidato dentro altri tag semantici.
+    ============================================================ -->
+    <main>
+
+        <!-- ============================================================
+             <section>
+             Rappresenta una sezione tematica generica del documento.
+             Raggruppa contenuti che condividono un argomento comune.
+             Di solito inizia con un titolo (<h2>, <h3>, ecc.).
+             Diverso da <div>: ha un significato semantico preciso.
+        ============================================================ -->
+        <section>
+            <h2>Le nostre notizie</h2>
+            <p>Questa sezione raccoglie tutti gli articoli recenti.</p>
+
+
+            <!-- ============================================================
+                 <article>
+                 Rappresenta un contenuto autonomo e indipendente,
+                 che avrebbe senso anche da solo (es. un articolo di
+                 giornale, un post di un blog, un commento utente).
+                 Può contenere il proprio <header> e <footer> interni.
+            ============================================================ -->
+            <article>
+                <h3>La pace nel mondo</h3>
+                <p>Testo dell'articolo. Questo contenuto è autonomo e
+                   potrebbe essere pubblicato altrove mantenendo senso.</p>
+            </article>
+
+            <article>
+                <h3>Società degli USA</h3>
+                <p>Anche questo articolo è un contenuto indipendente.</p>
+            </article>
+
+        </section>
+
+
+        <!-- ============================================================
+             <aside>
+             Rappresenta un contenuto laterale, correlato ma non
+             essenziale rispetto al contenuto principale.
+             Tipici utilizzi: barre laterali (sidebar), curiosità,
+             pubblicità, widget, note a margine, link correlati.
+        ============================================================ -->
+        <aside>
+            <h3>Articoli correlati</h3>
+            <p>Leggi anche: <a href="#">Altri articoli sul tema</a></p>
+        </aside>
+
+    </main>
+
+
+    <!-- ============================================================
+         <footer>
+         Rappresenta il piè di pagina della pagina o di una sezione.
+         Contiene tipicamente informazioni sull'autore, copyright,
+         link a termini e condizioni, mappa del sito, contatti.
+         Come <header>, può comparire più volte nella pagina.
+    ============================================================ -->
+    <footer>
+        <p>&copy; 2025 Il mio sito web. Tutti i diritti riservati.</p>
+        <p>Creato con HTML5 semantico.</p>
+    </footer>
+
+</body>
+</html>
