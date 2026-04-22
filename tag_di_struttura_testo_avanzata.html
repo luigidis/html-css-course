@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Riferimento Tag HTML - Esempi per la Classe</title>
+</head>
+<body>
+
+  <h1>Foglio di riferimento: Tag HTML</h1>
+  <p>Questo documento mostra un esempio per ciascun tag HTML studiato, con spiegazioni nei commenti.</p>
+
+  <hr>
+
+  <!-- ============================================================
+       SEZIONE 1: TAG PER L'ENFASI E LA FORMATTAZIONE DI TESTO
+       ============================================================ -->
+
+  <h2>1. Tag per l'enfasi e la formattazione di testo</h2>
+
+  <!-- TAG: <strong>
+       Rende il testo in GRASSETTO con significato semantico di importanza.
+       Esempio: avvisi importanti, termini chiave. -->
+  <p>Ricorda: <strong>non toccare i file di sistema</strong> senza permesso.</p>
+
+  <!-- TAG: <mark>
+       Evidenzia il testo come se fosse usato un evidenziatore giallo.
+       Utile per indicare parti rilevanti in un testo, come risultati di ricerca. -->
+  <p>Nel brano, la frase più importante è: <mark>l'acqua è essenziale per la vita</mark>.</p>
+
+  <!-- TAG: <small>
+       Riduce la dimensione del testo. Usato tipicamente per note legali,
+       disclaimer, note a piè di pagina o testo secondario. -->
+  <p>Prezzo: €49,99 <small>(IVA inclusa)</small></p>
+
+  <!-- TAG: <del>
+       Mostra il testo come "cancellato" con una linea orizzontale sopra.
+       Indica contenuto rimosso o non più valido. Semanticamente significa "eliminato". -->
+  <p>Il prezzo originale era <del>€79,99</del>, ora è €49,99.</p>
+
+  <!-- TAG: <ins>
+       Mostra il testo come "inserito" (di solito sottolineato).
+       Indica contenuto aggiunto, spesso usato insieme a <del> per mostrare modifiche. -->
+  <p>La riunione è fissata per <del>lunedì</del> <ins>martedì</ins> prossimo.</p>
+
+  <hr>
+
+  <!-- ============================================================
+       SEZIONE 2: TAG PER APICI E PEDICI
+       ============================================================ -->
+
+  <h2>2. Tag per apici e pedici</h2>
+
+  <!-- TAG: <sup>
+       Eleva il testo come APICE (soprascritto).
+       Usato in matematica per le potenze, nelle note a piè di pagina,
+       o in chimica per le cariche ioniche. -->
+  <p>La formula dell'area del cerchio è: A = &pi; r<sup></sup></p>
+
+  <!-- TAG: <sub>
+       Abbassa il testo come PEDICE (sottoscritto).
+       Usato in chimica per le formule molecolari, in matematica per gli indici. -->
+  <p>La formula chimica dell'acqua è: H<sub>2</sub>O</p>
+
+  <hr>
+
+  <!-- ============================================================
+       SEZIONE 3: TAG PER LA RAPPRESENTAZIONE DI CODICE
+       ============================================================ -->
+
+  <h2>3. Tag per la rappresentazione di codice</h2>
+
+  <!-- TAG: <code>
+       Mostra il testo in carattere monospazio (es. Courier).
+       Usato per frammenti di codice inline, nomi di variabili, comandi brevi.
+       Non preserva gli spazi bianchi e le interruzioni di riga. -->
+  <p>Per stampare in Python usa il comando <code>print("ciao")</code>.</p>
+
+  <!-- TAG: <pre>
+       Mostra il testo PRE-formattato, rispettando esattamente
+       spazi, rientri e interruzioni di riga così come sono scritti nel codice HTML.
+       Spesso usato insieme a <code> per blocchi di codice multiriga. -->
+  <pre><code>def saluta(nome):
+    messaggio = "Ciao, " + nome
+    print(messaggio)
+
+saluta("Studente")</code></pre>
+
+  <!-- TAG: <kbd>
+       Rappresenta l'input da TASTIERA dell'utente.
+       Indica tasti o combinazioni di tasti che l'utente deve premere. -->
+  <p>Per salvare il file premi <kbd>Ctrl</kbd> + <kbd>S</kbd>.</p>
+
+  <!-- TAG: <samp>
+       Mostra l'OUTPUT di un programma, un terminale o uno script.
+       Indica il testo che il computer "dice" all'utente come risposta. -->
+  <p>Il programma ha risposto: <samp>Errore: file non trovato.</samp></p>
+
+  <!-- TAG: <var>
+       Rappresenta una VARIABILE matematica o di programmazione.
+       Di solito viene visualizzato in corsivo. -->
+  <p>Nella formula <var>E</var> = <var>m</var>c<sup>2</sup>, la lettera <var>m</var> rappresenta la massa.</p>
+
+  <hr>
+
+  <!-- ============================================================
+       SEZIONE 4: TAG PER LE CITAZIONI
+       ============================================================ -->
+
+  <h2>4. Tag per le citazioni</h2>
+
+  <!-- TAG: <blockquote>
+       Indica una citazione LUNGA presa da una fonte esterna.
+       Il browser la rientra visivamente. Può avere l'attributo "cite"
+       con l'URL della fonte originale. -->
+  <blockquote cite="https://it.wikipedia.org/wiki/Albert_Einstein">
+    La fantasia è più importante della conoscenza, perché la conoscenza è limitata,
+    mentre la fantasia abbraccia il mondo intero.
+  </blockquote>
+
+  <!-- TAG: <q>
+       Indica una citazione BREVE, inline nel testo.
+       Il browser aggiunge automaticamente le virgolette attorno al testo.
+       Può anche avere l'attributo "cite" con l'URL della fonte. -->
+  <p>Come disse Einstein: <q>La logica ti porterà da A a B, ma l'immaginazione ti porterà ovunque.</q></p>
+
+  <!-- TAG: <cite>
+       Indica il TITOLO di un'opera (libro, film, canzone, articolo...).
+       Viene visualizzato in corsivo. Non è per il nome dell'autore, ma per il titolo. -->
+  <p>Ho appena letto <cite>Il nome della rosa</cite> di Umberto Eco.</p>
+
+  <hr>
+
+  <!-- ============================================================
+       SEZIONE 5: TAG SEMANTICI PER DEFINIZIONE E DATI
+       ============================================================ -->
+
+  <h2>5. Tag semantici per definizione e dati</h2>
+
+  <!-- TAG: <abbr>
+       Indica un'ABBREVIAZIONE o un ACRONIMO.
+       L'attributo "title" fornisce il significato completo, che appare
+       come tooltip quando si passa il mouse sopra. -->
+  <p>Ho imparato a programmare in <abbr title="HyperText Markup Language">HTML</abbr> a scuola.</p>
+
+  <!-- TAG: <dfn>
+       Indica la DEFINIZIONE di un termine, ovvero il punto
+       in cui un termine viene spiegato per la prima volta nel documento. -->
+  <p>
+    <dfn>L'ipertesto</dfn> è un testo che contiene collegamenti ad altri testi,
+    permettendo una navigazione non lineare tra i contenuti.
+  </p>
+
+  <!-- TAG: <time>
+       Rappresenta una data, un orario o una durata in modo leggibile
+       sia dagli umani che dai motori di ricerca e dai browser.
+       L'attributo "datetime" contiene il formato standardizzato (ISO 8601). -->
+  <p>La lezione si terrà il <time datetime="2025-10-15">15 ottobre 2025</time> alle <time datetime="09:00">9:00</time>.</p>
+
+  <!-- TAG: <address>
+       Indica le informazioni di CONTATTO per l'autore o il proprietario
+       del documento o di una sezione. Può contenere email, indirizzo fisico,
+       numero di telefono, ecc. Viene visualizzato in corsivo. -->
+  <address>
+    Per informazioni:<br>
+    Prof. Luigi Bianchi<br>
+    Email: luigi.bianchi@scuola.it<br>
+    Via Roma 1, Napoli
+  </address>
+
+  <hr>
+  <p><small>Foglio di riferimento creato per uso didattico ad Luigi Distefano </small></p>
+
+</body>
+</html>
