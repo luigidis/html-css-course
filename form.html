@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <form action="registration.js" method="post">
+      <!-- L'elemento HTML <fieldset> viene utilizzato per raggruppare logicamente controlli ed etichette correlati all'interno di un modulo (form), 
+        migliorando l'organizzazione visiva e l'accessibilità -->
+      
+      <fieldset>
+        <!-- Campo di testo normale -->
+        <label for="input_01">Nome</label>
+        <input type="text" name="name" id="input_01"/>
+        
+        <label for="cognome">Cognome</label>
+        <input type="text" name="cognome" placeholder="Inserisci il cognome" />
+
+        <!-- Campo Password (testo nascosto)-->
+        <input type="password" name="password" placeholder="Password" />
+
+        <!-- Email (validazione automatica)-->
+        <input type="email" name="email" placeholder="email@esempio.com" required />
+
+        <!-- Telefono -->
+        <input type="tel" name="telefono" placeholder="+39 123 456 7890" />
+
+        <!-- URL -->
+        <input type="url" name="sito" placeholder="https://example.com" />
+        </fieldset>
+        <fieldset>
+        <!-- Numero -->
+        <p>Numero</p>
+        <input type="number" name="eta" min="18" max="99" step="1" />
+
+        <!-- Data -->
+        <input type="date" name="nascita" min="1990-01-01" max="2024-12-31" />
+
+        <!-- Campo ricerca -->
+        <input type="search" name="cerca" placeholder="Cera nel sito..." />
+  
+
+        <!-- Selettore colore -->
+        <input type="color" name="colore_preferito" value="#00ff00" />
+
+        <!-- Updloaf file -->
+        <!-- <input type="file" name="curriculum" /> -->
+
+        <hr>
+        <input type="file" name="fotos" multiple accept="pdf" />
+        <!-- <input
+          type="file"
+          name="avatar"
+          multiple
+          accept="image/png,image/jpeg"
+        /> -->
+        <hr>
+
+        <!-- Checkbox -->
+        <!-- <input type="checkbox" name="newsletter" value="si" id="news" />
+        <label for="news"> Inscriviti alla newsletter</label> -->
+
+        <!-- Radio button -->
+        <!-- Le scelte nel tag Radio sono connesse dall'attributo name-->
+        <input type="radio" name="genere" value="ha_scelto_maschio" id="maschio" />
+        <label for="maschio">Maschio</label>
+
+        <input type="radio" name="genere" value="ha_scelto_femmina" id="femmina" />
+        <label for="femmina">Femmina</label>
+
+        <input type="radio" name="genere" value="altro" id="altro" />
+        <label for="asessuato">Altro</label>
+        <!-- <label>
+          Email:
+          <input type="email" name="email" />
+        </label> -->
+        <select name="tu_ti_chiami_città" id="input_select_della_città" >
+          <option value="">Seleziona una città</option>
+          <optgroup label="Nord">
+            <option value="milano">Milano</option>
+            <option value="torino">Torino</option>
+          </optgroup>
+          <optgroup label="Centro">
+            <option value="rome">Roma</option>
+            <option value="napoli">Napoli</option>
+          </optgroup>
+          <optgroup label="Sud">
+            <option value="catania">Catania</option>
+            <option value="satania">Satania</option>
+            <option value="katania">Katania</option>
+          </optgroup>
+        </select>
+      </fieldset>
+      <button type="submit">Conferma</button>
+      <button type="reset">Cancella Tutto</button>
+    </form>
+  </body>
+</html>
