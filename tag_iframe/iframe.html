@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iframe tag</title>
+  </head>
+  <body>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/EcczvEuIV8c?si=HSW_07X61umRhnZZ"
+      title="YouTube video player"
+      frameborder="0"
+      allow="
+        accelerometer;
+        autoplay;
+        clipboard-write;
+        encrypted-media;
+        gyroscope;
+        picture-in-picture;
+        web-share;
+      "
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+    <!-- Allowfullscrenn -- permette la full screen 
+         referrerpolicy -- non vi interessano ma sono valori che servono a l'iframe
+         di youtube di funzionare
+         frameborder --  bordo dell'iframe -->
+
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.248366178248!2d15.055554476797978!3d37.57276887203693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1313fd95f354c8df%3A0xf52c2ad7b50ff64f!2sVia%20Tremestieri%2C%2095030%20Mascalucia%20CT!5e0!3m2!1sit!2sit!4v1776161762635!5m2!1sit!2sit"
+      width="600"
+      height="450"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+
+    <!-- Il codice di Twitter non è un iframe nella forma ma quando viene letto dal
+         browser è un iframe a tutti gli effetti all'interno del tag script c'è linguaggio
+         javascript (cioè di pogrammazzione) che modifica il tutto per poter generare l'iframe-->
+    <blockquote class="twitter-tweet">
+      <p lang="en" dir="ltr">
+        more html-in-canvas slop
+        <a href="https://t.co/eBhS5OC0qB">pic.twitter.com/eBhS5OC0qB</a>
+      </p>
+      &mdash; Codetard (@codetaur)
+      <a
+        href="https://twitter.com/codetaur/status/2043615777774018594?ref_src=twsrc%5Etfw"
+        >April 13, 2026</a
+      >
+    </blockquote>
+    <script
+      async
+      src="https://platform.twitter.com/widgets.js"
+      charset="utf-8"
+    ></script>
+
+    <!-- Iframe custome che posso creare anche io -->
+    <iframe
+        width="560"
+        height="312"
+        src="https://codegrind.it/corsi"
+        title="Codegrind"
+        frameborder="0"
+        ></iframe>
+  </body>
+</html>
