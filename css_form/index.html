@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form di Login</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container-center-login container-flex">
+      <img class="logo" src="./logo_wodly.svg" alt="" />
+      <div>
+        <div class="container-text">
+          <h1>Area Riservata</h1>
+          <p>Accedi al gestionale per i tuoi pazienti</p>
+        </div>
+        <form action="file.js">
+          <div class="container-inputs">
+            <div class="container-flex-input">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="luigi@email.com"
+              />
+            </div>
+            <div class="container-flex-input">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="********"
+              />
+            </div>
+            <button class="button-login">Accedi</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

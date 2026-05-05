@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, ol
+{
+    list-style: none;
+}
+
+.container
+{
+    display: flex;
+    padding: 15px;
+    column-gap: 20px;
+    line-height: 24px;
+}
+
+#flex-grow
+{
+    flex-grow: 1;
+}
+
+.list_menu
+{
+    display: flex;
+    column-gap: 20px;
+}
+
+.font_menu
+{
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.start {
+    background-color: blue;
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+.blue_section
+{
+    background-color: #B4D0E7;
+    height: 200px;
+}

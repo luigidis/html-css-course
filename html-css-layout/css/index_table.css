@@ -1,0 +1,21 @@
+/* #region DeBUG Section */
+
+table td {
+    border: 1px solid red;
+}
+
+/* #endregion DEBUG */
+
+/* Section Table */
+
+tr td {
+    min-height: 300px;
+    height: 300px;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 30px 10px;
+}
+

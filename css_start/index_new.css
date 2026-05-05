@@ -1,0 +1,50 @@
+/* Tutto il contenuto del mio commento */
+
+/* h1,h2,h3,h4 {
+            color: blue;
+            font-size: 15px;
+            background-color: khaki;
+            border: 10px solid red;
+} */
+
+/* .classe1996, .classe1997 {
+    color: goldenrod;
+    font-size: 56px;
+    background-color: coral;
+    
+} */
+
+/* #pippo {
+    color: red;
+    font-size: unset;
+    background-color: unset;
+    border: unset;
+
+} */
+
+
+h1 {
+    color: blue;
+}
+
+h1:hover {
+    color: chocolate;
+}
+
+
+.pippo {
+    color: red;
+}
+
+/* .pluto {
+    color: chartreuse;
+} */
+
+#sito_con_luigi {
+    color: blueviolet;
+}
+
+
+#sito_con_luigi:hover {
+    color: aqua;
+}

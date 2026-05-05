@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.paragraph {
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+.list {
+    padding-left: 20px;
+}
+
+
+.list {
+    border: 10px solid red;
+    border-style: dotted;
+    border-radius: 20px;
+}

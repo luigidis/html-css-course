@@ -1,0 +1,324 @@
+/* ============================================================
+   GUIDA AI SELETTORI CSS
+   Foglio di riferimento per studenti di Web Programming
+   ============================================================ */
+
+
+/* ──────────────────────────────────────────────
+   1. SELETTORE UNIVERSALE
+   Si applica a TUTTI gli elementi della pagina
+   ────────────────────────────────────────────── */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ──────────────────────────────────────────────
+   2. SELETTORE DI TAG (o di tipo)
+   Si applica a tutti gli elementi con quel tag
+   ────────────────────────────────────────────── */
+h1 {
+    font-size: 2rem;
+}
+
+p {
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* ──────────────────────────────────────────────
+   3. SELETTORE DI CLASSE
+   Si applica agli elementi con class="..."
+   Il punto (.) indica la classe
+   ────────────────────────────────────────────── */
+.evidenziato {
+    background-color: yellow;
+}
+
+.bottone {
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+
+/* ──────────────────────────────────────────────
+   4. SELETTORE DI ID
+   Si applica all'elemento con id="..."
+   Il cancelletto (#) indica l'ID
+   Ogni ID deve essere UNICO nella pagina!
+   ────────────────────────────────────────────── */
+#intestazione {
+    background-color: navy;
+    color: white;
+}
+
+#piede-pagina {
+    font-size: 0.8rem;
+}
+
+
+/* ──────────────────────────────────────────────
+   5. SELETTORE DI RAGGRUPPAMENTO
+   Applica le stesse regole a più selettori
+   Si separano con la virgola (,)
+   ────────────────────────────────────────────── */
+h1,
+h2,
+h3 {
+    font-family: Georgia, serif;
+    color: #333;
+}
+
+.avviso,
+.errore,
+.successo {
+    padding: 10px;
+    border-radius: 4px;
+}
+
+
+/* ──────────────────────────────────────────────
+   6. SELETTORE DISCENDENTE
+   Seleziona elementi DENTRO un altro elemento
+   (a qualsiasi livello di profondità)
+   Si usa uno spazio tra i selettori
+   ────────────────────────────────────────────── */
+/* Tutti i <p> che si trovano dentro un <div> */
+div p {
+    color: darkblue;
+}
+
+/* Tutti i <li> dentro un elemento con classe .menu */
+.menu li {
+    list-style: none;
+}
+
+
+/* ──────────────────────────────────────────────
+   7. SELETTORE FIGLIO DIRETTO
+   Seleziona solo i figli DIRETTI (primo livello)
+   Si usa il simbolo maggiore (>)
+   ────────────────────────────────────────────── */
+/* Solo i <li> figli diretti di <ul>, non i nipoti */
+ul > li {
+    border-bottom: 1px solid #ccc;
+}
+
+/* Solo i <p> figli diretti di .contenuto */
+.contenuto > p {
+    margin-bottom: 1rem;
+}
+
+
+/* ──────────────────────────────────────────────
+   8. SELETTORE FRATELLO ADIACENTE
+   Seleziona l'elemento che viene SUBITO DOPO
+   Si usa il simbolo più (+)
+   ────────────────────────────────────────────── */
+/* Il <p> che viene subito dopo un <h2> */
+h2 + p {
+    font-style: italic;
+}
+
+/* Il <span> che viene subito dopo un <input> */
+input + span {
+    color: red;
+}
+
+
+/* ──────────────────────────────────────────────
+   9. SELETTORE FRATELLO GENERALE
+   Seleziona TUTTI gli elementi fratelli successivi
+   Si usa la tilde (~)
+   ────────────────────────────────────────────── */
+/* Tutti i <p> che vengono dopo un <h2> (non solo il primo) */
+h2 ~ p {
+    color: gray;
+}
+
+
+/* ──────────────────────────────────────────────
+   10. SELETTORI DI ATTRIBUTO
+   Selezionano elementi in base ai loro attributi HTML
+   Si usano le parentesi quadre [ ]
+   ────────────────────────────────────────────── */
+
+/* Elementi che HANNO l'attributo (qualunque valore) */
+a[target] {
+    color: orange;
+}
+
+/* Valore ESATTO dell'attributo */
+input[type="text"] {
+    border: 1px solid blue;
+}
+
+/* Il valore INIZIA con quella stringa */
+a[href^="https"] {
+    color: green;
+}
+
+/* Il valore FINISCE con quella stringa */
+a[href$=".pdf"] {
+    color: red;
+}
+
+/* Il valore CONTIENE quella stringa */
+a[href*="wikipedia"] {
+    font-weight: bold;
+}
+
+
+/* ──────────────────────────────────────────────
+   11. PSEUDO-CLASSI
+   Selezionano elementi in base al loro STATO
+   Si usa i due punti (:)
+   ────────────────────────────────────────────── */
+
+/* Quando il cursore passa sopra l'elemento */
+a:hover {
+    text-decoration: underline;
+    color: crimson;
+}
+
+/* Un link già visitato */
+a:visited {
+    color: purple;
+}
+
+/* Un link non ancora visitato */
+a:link {
+    color: blue;
+}
+
+/* Quando l'elemento è selezionato/attivo (es. cliccato) */
+button:active {
+    opacity: 0.8;
+}
+
+/* Quando un campo modulo è in focus (selezionato) */
+input:focus {
+    outline: 2px solid blue;
+}
+
+/* Il PRIMO figlio di un elemento */
+li:first-child {
+    font-weight: bold;
+}
+
+/* L'ULTIMO figlio di un elemento */
+li:last-child {
+    border-bottom: none;
+}
+
+/* L'elemento N-esimo figlio (es. il 3°) */
+li:nth-child(3) {
+    color: red;
+}
+
+/* Ogni elemento PARI (2°, 4°, 6°...) */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Ogni elemento DISPARI (1°, 3°, 5°...) */
+tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+/* Elementi che NON corrispondono al selettore */
+p:not(.speciale) {
+    color: black;
+}
+
+
+/* ──────────────────────────────────────────────
+   12. PSEUDO-ELEMENTI
+   Selezionano una PARTE di un elemento
+   Si usano i due doppi punti (::)
+   ────────────────────────────────────────────── */
+
+/* La prima lettera del testo */
+p::first-letter {
+    font-size: 2em;
+    font-weight: bold;
+    float: left;
+}
+
+/* La prima riga del testo */
+p::first-line {
+    font-variant: small-caps;
+}
+
+/* Inserisce contenuto PRIMA dell'elemento */
+.avviso::before {
+    content: "⚠ ";
+}
+
+/* Inserisce contenuto DOPO l'elemento */
+.novita::after {
+    content: " 🆕";
+}
+
+/* Il testo selezionato dall'utente */
+::selection {
+    background-color: yellow;
+    color: black;
+}
+
+
+/* ──────────────────────────────────────────────
+   13. SELETTORI COMBINATI (esempi avanzati)
+   Si possono combinare più selettori insieme
+   ────────────────────────────────────────────── */
+
+/* Un <p> con classe .intro dentro #contenuto */
+#contenuto p.intro {
+    font-size: 1.2rem;
+}
+
+/* Il primo <li> diretto figlio di .menu */
+.menu > li:first-child {
+    border-top: 2px solid black;
+}
+
+/* Un <a> con hover dentro .nav */
+.nav a:hover {
+    background-color: lightgray;
+}
+
+
+/* ============================================================
+   RIEPILOGO DEI SELETTORI
+   ============================================================
+
+   *               → Universale (tutti gli elementi)
+   tag             → Tipo/Tag (es. h1, p, a)
+   .classe         → Classe (class="...")
+   #id             → ID (id="...")
+   A, B            → Raggruppamento
+   A B             → Discendente (B dentro A)
+   A > B           → Figlio diretto
+   A + B           → Fratello adiacente (subito dopo)
+   A ~ B           → Fratelli generali (tutti dopo)
+   [attr]          → Ha l'attributo
+   [attr="val"]    → Attributo con valore esatto
+   [attr^="val"]   → Attributo inizia con...
+   [attr$="val"]   → Attributo finisce con...
+   [attr*="val"]   → Attributo contiene...
+   :hover          → Pseudo-classe stato
+   :first-child    → Primo figlio
+   :nth-child(n)   → N-esimo figlio
+   :not(sel)       → Negazione
+   ::before        → Pseudo-elemento prima
+   ::after         → Pseudo-elemento dopo
+   ::first-letter  → Prima lettera
+   ::selection     → Testo selezionato
+
+   ============================================================ */

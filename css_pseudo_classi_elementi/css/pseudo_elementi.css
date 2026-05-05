@@ -1,0 +1,66 @@
+/* ──────────────────────────────────────────────
+   PSEUDO-ELEMENTI
+   Selezionano una PARTE di un elemento
+   Si usano i due doppi punti (::)
+   ────────────────────────────────────────────── */
+
+/* La prima lettera del testo */
+p::first-letter {
+    font-size: 2em;
+    font-weight: bold;
+    float: left;
+}
+
+/* La prima riga del testo */
+p::first-line {
+    font-variant: small-caps;
+}
+/* Il testo selezionato dall'utente */
+::selection {
+    background-color: yellow;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Inserisce contenuto PRIMA dell'elemento */
+.avviso::before {
+    content: "⚠ ";
+    color: chocolate;
+    min-height: 200px;
+}
+
+/* Inserisce contenuto DOPO l'elemento */
+.avviso::after {
+    content: " ";
+}

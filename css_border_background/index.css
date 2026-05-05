@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    margin: 0;
+}
+
+p {
+    /* height: 500px;
+    border: 10px solid red;
+    background-image: url('./starfish-1851289_640.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-width: 10px;
+    border-color: red;
+    border-style: solid; */
+    /* border-radius: 10px; 100% */
+    /* border-top-left-radius: 10px; */
+}
+
+
+a:hover {
+    color: yellow;
+    background-color: blueviolet;
+    font-size: 100;
+}
+
+a:link {
+    color: green;
+}
+
+
+a:visited {
+    color: brown;
+}
+
+p:hover {
+    color: green;
+    background-color: black;
+    font-size: smaller;
+}
+
+
+.pippo {
+    background-color: cadetblue;
+    /* border-bottom: 1px solid black; */
+    margin-top: 10px;
+    max-width: 200px;
+}
+
+/* li:last-child {
+    background-color: blueviolet;
+} */
+
+/* h1:hover {
+    color: goldenrod;
+    background-color: blue;
+    font-size: smaller;
+} */
+
+/* .pippo:hover {
+    color: green;
+    background-color: blueviolet;
+} */
+
+input {
+    border: 3px solid red;
+}
+
+input:focus {
+    border: 5px dotted blue;
+}
+
+input:focus-visible {
+    outline: none;
+}
+
+li:nth-child(3) {
+    color: red;
+}
+
+li:nth-child(odd) {
+    background-color: green;
+}
+
+li:nth-child(even) {
+    background-color: brown;
+}
+
+th:first-child {
+    border: 10px solid red;
+}
+
+/* td:first-child {
+    background-color: blueviolet;
+} */
+
+tr:first-child {
+    background-color: brown;
+}

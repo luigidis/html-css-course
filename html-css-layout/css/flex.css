@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* #region DEBUG */
+
+.container-flex div
+{
+    border: 1px solid red;
+}
+
+.container-center {
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.bolder {
+    font-weight: bolder;
+}
+
+.text-red {
+    color: rgb(122, 23, 23);
+}
+
+.margin-t-30 {
+    margin-top: 30px;
+}
+
+.container-flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+img {
+    width: 120px;
+}
+
+.container-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.margin-l-15 {
+    margin-left: 15px;
+}
+
+.b-black {
+    background-color: rgb(20, 20, 20);
+}
+
+.t-white {
+    color: white;
+}

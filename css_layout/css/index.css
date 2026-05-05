@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*debug section */
+
+.debug-1 {
+    background-color: blueviolet;
+}
+
+.debug-2 {
+    background-color: brown;
+}
+
+.main-container {
+    height: 100vh;
+}
+
+.navbar-container {
+    height: 10%;
+}
+
+.first-section-container {
+    height: 90%;
+}

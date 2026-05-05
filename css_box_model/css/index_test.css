@@ -1,0 +1,36 @@
+*
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+.box {
+    width: 2000px;
+    height: 200px;
+    background-color: chocolate;
+    /* margin: 20px; */
+    /* margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 20px;
+    margin-bottom: 20px; */
+    /* margin: 0 0 0 0; */
+    /* border: 10px solid red;
+    border-color: green;
+    border-style: dotted;
+    border-left-width: 20px; */
+    /* padding: 100px 50px; */
+    /* padding: 20px; */
+}
+
+.pippo {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+
+/* .pippo {
+    margin-left: 300px;
+    margin-right: 300px;
+} */

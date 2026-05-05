@@ -1,0 +1,82 @@
+/* 
+    Selettore universale, seleziona tutti gli elementi presenti nel foglio html
+    Questa regole utilizzata in tutti i progetti professionali permette un reset 
+    completo del foglio ed evita comportamenti imprevisti dal browser    
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+h1
+{
+    color: cadetblue;
+    background-color: brown;
+    text-shadow: black;
+}
+
+/* ──────────────────────────────────────────────
+   PSEUDO-CLASSI
+   Selezionano elementi in base al loro STATO
+   Si usa i due punti (:)
+   ────────────────────────────────────────────── */
+
+/* Quando il cursore passa sopra l'elemento */
+a:hover {
+    text-decoration: underline;
+    color: crimson;
+}
+
+/* Un link già visitato */
+a:visited {
+    color: purple;
+}
+
+/* Un link non ancora visitato */
+a:link {
+    color: green;
+}
+
+/* Quando l'elemento è selezionato/attivo (es. cliccato) */
+button:active {
+    opacity: 0.8;
+}
+
+/* Quando un campo modulo è in focus (selezionato) */
+input:focus {
+    outline: 2px solid blue;
+    
+}
+
+/* Il PRIMO figlio di un elemento */
+li:first-child {
+    font-weight: bold;
+}
+
+/* L'ULTIMO figlio di un elemento */
+li:last-child {
+    border-bottom: none;
+}
+
+/* L'elemento N-esimo figlio (es. il 3°) */
+li:nth-child(3) {
+    color: red;
+}
+
+/* Ogni elemento PARI (2°, 4°, 6°...) */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Ogni elemento DISPARI (1°, 3°, 5°...) */
+tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+/* Elementi che NON corrispondono al selettore */
+p:not(.speciale) {
+    color: black;
+}

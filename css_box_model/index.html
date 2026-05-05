@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Model</title>
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <h1>Lezione Box Sizing Css</h1>
+    <h2>content-box (default)</h2>
+    <p>
+      Utilizzando invece il tag content-box si stadicendo che le dimensioni che
+      io dò al mio tag devono valere solo per il mio contenuto
+    </p>
+    <div class="box">Contenuto del box. Dimensione finale: 280px x 180px</div>
+
+    <h2>border-box</h2>
+    <p>
+      Con Border box noi stiamo dicendo che le dimensioni che noi stiamo dando
+      al nostro tag devono rientrare dal margine al Contenuto
+    </p>
+    <p>
+      Quindi se io metto width del mio div 200px (lui si adatterà in automatic a
+      parte casi estremi per poter avere un blocco unico da 200px di larghezza)
+    </p>
+    <div class="border_box">
+      Contenuto del box. Dimensione finale: 280px x 180px
+    </div>
+
+    <h2>Spiegazione</h2>
+    <div>
+      <p>Il primo box ha dimensioni finali di 280x180px perchè:</p>
+      <ol>
+        <li>Width: 200px+30px padding sx + 30 px padding dx + 10 px di border sx + 10px border dx = 280px</li>
+        <li>Height: 100px+ 30px padding top+ 30px padding bottom + 10px border top + 10px border bottom = 180px</li>
+        <li>Il margin (50px) crea spazio attorno ma non aumenta le dimensioni del contenitore </li>
+      </ol>
+    </div>
+  </body>
+</html>

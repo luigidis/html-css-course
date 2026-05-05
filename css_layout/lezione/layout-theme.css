@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0d1b2a;
+  color: #e0e8f0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
+  margin: 0;
+  padding: 32px 48px;
+}
+
+/* Titoli */
+h1 {
+  color: #60b8ff;
+  font-size: 2em;
+  border-bottom: 2px solid #1e4d78;
+  padding-bottom: 8px;
+  margin-top: 40px;
+}
+
+h2 {
+  color: #7dd3fc;
+  font-size: 1.4em;
+  border-bottom: 1px solid #1e3a5c;
+  padding-bottom: 4px;
+  margin-top: 32px;
+}
+
+h3 {
+  color: #93c5fd;
+  font-size: 1.1em;
+  margin-top: 24px;
+}
+
+/* Testo in grassetto e corsivo */
+strong {
+  color: #fbbf24;
+}
+
+em {
+  color: #a5f3fc;
+}
+
+/* Link */
+a {
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+/* Separatori */
+hr {
+  border: none;
+  border-top: 1px solid #1e3a5c;
+  margin: 24px 0;
+}
+
+/* Blocchi di codice inline */
+code {
+  background-color: #102235;
+  color: #86efac;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: 'Consolas', 'Courier New', monospace;
+  font-size: 0.9em;
+}
+
+/* Blocchi di codice multi-riga */
+pre {
+  background-color: #071520;
+  border: 1px solid #1e3a5c;
+  border-left: 4px solid #2563eb;
+  border-radius: 6px;
+  padding: 16px 20px;
+  overflow: auto;
+  margin: 16px 0;
+}
+
+pre code {
+  background: none;
+  color: #86efac;
+  padding: 0;
+  font-size: 0.88em;
+  line-height: 1.6;
+}
+
+/* Blockquote */
+blockquote {
+  background-color: #0f2a40;
+  border-left: 4px solid #2563eb;
+  border-radius: 0 6px 6px 0;
+  margin: 16px 0;
+  padding: 12px 20px;
+  color: #bae6fd;
+  font-style: italic;
+}
+
+blockquote p {
+  margin: 0;
+}
+
+/* Tabelle */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 0.92em;
+}
+
+thead tr {
+  background-color: #1e3a5c;
+}
+
+th {
+  color: #60b8ff;
+  padding: 10px 14px;
+  text-align: left;
+  font-weight: 600;
+  border-bottom: 2px solid #2563eb;
+}
+
+td {
+  padding: 9px 14px;
+  border-bottom: 1px solid #152840;
+  color: #d1e8ff;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #0f2236;
+}
+
+tbody tr:hover {
+  background-color: #163352;
+}
+
+/* Liste */
+ul, ol {
+  padding-left: 24px;
+}
+
+li {
+  margin: 4px 0;
+  color: #d4e8ff;
+}
+
+p {
+  margin: 10px 0;
+}
